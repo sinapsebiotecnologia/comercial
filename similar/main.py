@@ -1,6 +1,5 @@
-import pandas as pd
+import requests as req
 
+dict = req.get('teste.json')
 
-
-dict = pd.read_csv("teste.csv").to_dict()
 print(dict)
