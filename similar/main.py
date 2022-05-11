@@ -4,7 +4,8 @@ import requests as req
 import streamlit as st
 
 def main():
-    if st.checkbox("Comparar"):
+    a = st.checkbox("Comparar", value=False)
+    if a:
         #1
         dict = req.get("https://sinapsebiotecnologia.github.io/teste.json")
         dict = dict.json()
