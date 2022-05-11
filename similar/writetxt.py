@@ -5,7 +5,7 @@ import pandas
 def main():
     x = st.file_uploader('arquivo')
 
-    st.text(x)
+    st.text(x[1])
 
     # if x != 'None':
     #     excel_data_df = pandas.read_excel(x)
