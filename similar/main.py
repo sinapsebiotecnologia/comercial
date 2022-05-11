@@ -17,7 +17,7 @@ def main():
 
         #3
         resultado = 'None'
-        if op == "Sinapse":
+        if lado == "Sinapse":
             for i in range(len(dict)):
                 if dict[i]["Sinapse"] == produto:
                     resultado = dict[i]["Concorrente"]
@@ -30,7 +30,7 @@ def main():
         #4
         if st.button("Verificar"):
             if resultado == 'None':
-                st.error(f"Correspondente nao encontrado! (se achar que isso é um erro, favor verificar arquivo excel)")
+                st.error(f"Correspondente nao encontrado!")
             else:
                 st.success(f"O produto {produto}, e similar ao produto {resultado}")
 
