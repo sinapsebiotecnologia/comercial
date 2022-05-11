@@ -79,13 +79,10 @@ def main():
             # final calc tes
     # st.markdown("---")
 
-    # st.file_uploader('file')
-
 # inicio funcoes calc tes
 
 def op4(ipi):
-    if ipi:
-        return 505
+    if ipi:cm
     else:
         return  537
 def op8(ipi):
@@ -94,10 +91,8 @@ def op8(ipi):
     else:
         return 540
 def op5(lado):
-    if lado == 'a':
-        return 504
-    else:
-        return 949
+    return ( 504 if lado == 'a' else 949 )
+
 def op1(fund,ipi,lado,choice):
     if lado == 'a':
         if fund == 1 and choice == 6:
