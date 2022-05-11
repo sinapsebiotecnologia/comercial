@@ -92,13 +92,11 @@ def op8(ipi):
         return 522
     else:
         return 540
-
 def op5(lado):
     if lado == 'a':
         return 504
     else:
         return 949
-
 def op1(fund,ipi,lado,choice):
     if lado == 'a':
         if fund == 1 and choice == 6:
@@ -120,8 +118,6 @@ def op1(fund,ipi,lado,choice):
             return 948
         else:
             return 947
-
-
 def op3(fund,ipi,lado):
     if lado == 'a':
         if fund == 2:
@@ -135,7 +131,6 @@ def op3(fund,ipi,lado):
             return 951
         else:
             return 950
-
 def op7(fund,choice,ipi):
     if fund == 1 and choice == 1:
         return 544
@@ -150,21 +145,16 @@ def op7(fund,choice,ipi):
             return 555
         else:
             return 544
-
 def fs(radio):
     if radio == 'Fapesp':
         return 1
     elif radio == 'FFM':
         return 2
     return 0
-
-
 def lado_tabela(sp, contr):
     if sp or contr:
         return 'a'
     return 'b'
-
-
 def numero_operacao(txt):
     if txt == 'Selecione a Operação':
         x = 0
