@@ -75,6 +75,7 @@ def main():
             b = f'TES: {tes}'
             st.info(b)
             # final calc tes
+    st.markdown("---")
 
 
 # inicio funcoes calc tes
