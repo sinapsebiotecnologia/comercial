@@ -32,7 +32,7 @@ def main():
             if resultado == 'None':
                 st.error(f"Correspondente nao encontrado! (se achar que isso é um erro, favor verificar arquivo excel)")
             else:
-                st.sucess(f"O produto {produto}, e similar ao produto {resultado}")
+                st.success(f"O produto {produto}, e similar ao produto {resultado}")
 
         #5
         # excel_data_df = pandas.read_excel('teste.xlsx')
