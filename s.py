@@ -79,7 +79,7 @@ def main():
             # final calc tes
     st.markdown("---")
 
-    st.file_uploader('file')
+    # st.file_uploader('file')
 
 # inicio funcoes calc tes
 
