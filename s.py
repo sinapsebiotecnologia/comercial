@@ -82,7 +82,8 @@ def main():
 # inicio funcoes calc tes
 
 def op4(ipi):
-    if ipi:cm
+    if ipi:
+        return 505
     else:
         return  537
 def op8(ipi):
