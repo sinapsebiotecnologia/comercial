@@ -1,4 +1,6 @@
 import json
+
+
 dict = json.load(open('teste.json'))
 
 print(dict)

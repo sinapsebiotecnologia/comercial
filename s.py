@@ -79,6 +79,7 @@ def main():
             # final calc tes
     st.markdown("---")
 
+    st.file_uploader('file')
 
 # inicio funcoes calc tes
 
@@ -178,7 +179,7 @@ def numero_operacao(txt):
         x = 9
     return x
 
-    # final funcoes calc tes
+# final funcoes calc tes
 
 
 if __name__ == '__main__':
