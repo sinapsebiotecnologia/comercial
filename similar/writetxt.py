@@ -2,7 +2,7 @@ import streamlit as st
 
 
 def main():
-    x = st.file_uploader('arquivo', type=txt)
+    x = st.file_uploader('arquivo')
 
     st.text(x)
 
