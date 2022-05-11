@@ -8,7 +8,7 @@ def main():
 
     st.markdown(html_temp, unsafe_allow_html=True)
 
-    st.markdown("---")
+    # st.markdown("---")
 
     # começo calc tes
     tes = 'test'
@@ -77,7 +77,7 @@ def main():
             b = f'TES: {tes}'
             st.info(b)
             # final calc tes
-    st.markdown("---")
+    # st.markdown("---")
 
 
 # inicio funcoes calc tes
