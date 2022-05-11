@@ -1,14 +1,14 @@
 [
  {
-  "x": "a",
-  "y": 1
+  "ORIGINAL": "S0AB",
+  "SIMILAR": "Z0AB"
  },
  {
-  "x": "b",
-  "y": 2
+  "ORIGINAL": "S0CD",
+  "SIMILAR": "Z0CD"
  },
  {
-  "x": "c",
-  "y": 3
+  "ORIGINAL": "S0FG",
+  "SIMILAR": "Z0FG"
  }
 ]
