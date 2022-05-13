@@ -94,58 +94,31 @@ def main():
 # inicio funcoes calc tes
 
 def op10(ipi):
-    if ipi:
-        return 953
-    else:
-        return 954
-
+    return (953 if ipi else 954)
 def op4(ipi):
-    if ipi:
-        return 505
-    else:
-        return  537
+    return (505 if ipi else 537)
 def op8(ipi):
-    if ipi:
-        return 522
-    else:
-        return 540
+    return (522 if ipi else 540)
 def op5(lado):
     return ( 504 if lado == 'a' else 949 )
-
 def op1(fund,ipi,lado,choice):
     if lado == 'a':
         if fund == 1 and choice == 6:
-            if ipi:
-                return 554
-            else:
-                return 533
+            return (554 if ipi else 533)
         elif fund == 2:
-            if ipi:
-                return 565
-            else:
-                return 560
+            return (565 if ipi else 560)
         elif ipi:
-            return 501
-        else:
-            return 535
+            return (501 if ipi else 535)
     else:
-        if ipi:
-            return 948
-        else:
-            return 947
+        return (948 if ipi else 947)
 def op3(fund,ipi,lado):
     if lado == 'a':
         if fund == 2:
             return 928
-        elif ipi:
-            return 924
         else:
-            return 925
+            return (924 if ipi else 925)
     else:
-        if ipi:
-            return 951
-        else:
-            return 950
+        return (951 if ipi else 950)
 def op7(fund,choice,ipi):
     if fund == 1 and choice == 1:
         return 544
