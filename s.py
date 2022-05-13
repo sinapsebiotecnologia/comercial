@@ -84,7 +84,7 @@ def main():
                     "\" Ajuste Sinief 13/2013\".")
             else:
                 b = f'TES: {tes}'
-                st.info(b)
+                st.success(b)
             # final calc tes
     # st.markdown("---")
 
