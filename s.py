@@ -32,8 +32,7 @@ def main():
         elif operacao == 2:
             tes = 527
         else:
-            blockipi = False
-            if not blockipi:
+            if operacao != 5:
                 ipi = st.checkbox("Produto Com IPI", value=False)
             if operacao == 4:
                 tes = op4(ipi)
@@ -55,7 +54,6 @@ def main():
 
                 if operacao == 5:
                     tes = op5(lado)
-                    blockipi = True
                 else:
                     fund = 0
                     choice = 1
