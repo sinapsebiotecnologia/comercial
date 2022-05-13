@@ -77,7 +77,7 @@ def main():
 
         if st.button("Verificar"):
             if operacao == 10:
-                st.info(f'TES Entrega: {tes}')
+                st.info(f'TES: {tes}')
                 if tes == 954:
                     st.warning("**A remessa das mercadorias, deverá conter destaque do ICMS devido, " \
                         "contendo além das informações previstas na legislação.**" \
