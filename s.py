@@ -16,7 +16,7 @@ def main():
 
     opcoes = ['Selecione a Operação', "Venda Normal", "Amostra", "Doação", "Entrega futura de venda",
               "Entrega futura remessa", "Demonstração", "Saida Troca",
-              "Venda por conta e ordem", "Simples remessa"]
+              "Venda por conta e ordem", "Simples remessa","Faturamento entre entidades publicas"]
 
     checkbox = st.selectbox('', opcoes)
 
@@ -39,6 +39,8 @@ def main():
 
             if operacao == 4:
                 tes = op4(ipi)
+            elif operacao == 10:
+                tes = op10(ipi)
             elif operacao == 8:
                 tes = op8(ipi)
             else:
@@ -74,12 +76,23 @@ def main():
                         tes = op7(fund,choice,ipi)
 
         if st.button("Verificar"):
-            b = f'TES: {tes}'
-            st.info(b)
+            if operacao == 10:
+                st.info(f'TES Faturamento: 952')
+                st.info(f'TES Entrega: {tes}')
+                st.warning("test")
+            else:
+                b = f'TES: {tes}'
+                st.info(b)
             # final calc tes
     # st.markdown("---")
 
 # inicio funcoes calc tes
+
+def op10(ipi):
+    if ipi:
+        return 953
+    else:
+        return 954
 
 def op4(ipi):
     if ipi:
@@ -173,6 +186,8 @@ def numero_operacao(txt):
         x = 8
     elif txt == 'Simples remessa':
         x = 9
+    elif txt == "Faturamento entre entidades publicas":
+        x = 10
     return x
 
 # final funcoes calc tes
