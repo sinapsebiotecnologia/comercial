@@ -32,6 +32,7 @@ def main():
         elif operacao == 2:
             tes = 527
         else:
+            blockipi = False
             if not blockipi:
                 ipi = st.checkbox("Produto Com IPI", value=False)
             if operacao == 4:
