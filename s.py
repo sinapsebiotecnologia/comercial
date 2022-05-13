@@ -140,9 +140,7 @@ def fs(radio):
         return 2
     return 0
 def lado_tabela(sp, contr):
-    if sp or contr:
-        return 'a'
-    return 'b'
+    return ('a' if sp or contr else 'b')
 def numero_operacao(txt):
     if txt == 'Selecione a Operação':
         x = 0
