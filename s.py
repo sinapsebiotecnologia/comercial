@@ -28,15 +28,12 @@ def main():
             tes = 521
         elif operacao == 6:
             a = st.checkbox('Produto para Demonstração em evento')
-            if a:
-                tes = 955
-            else:
-                tes = 956
+            tes = (955 if a else 956)
         elif operacao == 2:
             tes = 527
         else:
-            ipi = st.checkbox("Produto Com IPI", value=False)
-
+            if not blockipi:
+                ipi = st.checkbox("Produto Com IPI", value=False)
             if operacao == 4:
                 tes = op4(ipi)
             elif operacao == 10:
@@ -57,6 +54,7 @@ def main():
 
                 if operacao == 5:
                     tes = op5(lado)
+                    blockipi = True
                 else:
                     fund = 0
                     choice = 1
