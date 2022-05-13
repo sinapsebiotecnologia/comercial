@@ -16,7 +16,7 @@ def main():
 
     opcoes = ['Selecione a Operação', "Venda Normal", "Amostra", "Doação", "Entrega futura de venda",
               "Entrega futura remessa", "Demonstração", "Saida Troca",
-              "Venda por conta e ordem", "Simples remessa","Faturamento entre entidades publicas"]
+              "Venda por conta e ordem", "Simples remessa","Faturamento entre entidades publicas (entre 2 estados diferentes)"]
 
     checkbox = st.selectbox('', opcoes)
 
@@ -79,7 +79,14 @@ def main():
             if operacao == 10:
                 st.info(f'TES Faturamento: 952')
                 st.info(f'TES Entrega: {tes}')
-                st.warning("test")
+                a = "**A remessa das mercadorias, deverá conter destaque do ICMS devido, " \
+                    "contendo além das informações previstas na legislação.**" \
+                    "- Destinatário, aquele determinado pelo adquirente (Cliente);" \
+                    "- Natureza da operação, a expressão \"Remessa por conta e ordem de terceiros\";" \
+                    "- \"Chave de Acesso da NF-e Referenciada\", a chave de acesso da NF-e relativa ao faturamento (NFE 1);" \
+                    "- \"Informações Complementares\", a expressão \"NF-e emitida nos termos do artigo 129-A do RICMS/2000-SP\" e " \
+                    "\" Ajuste Sinief 13/2013\"."
+                st.warning(st.markdown(a))
             else:
                 b = f'TES: {tes}'
                 st.info(b)
@@ -186,7 +193,7 @@ def numero_operacao(txt):
         x = 8
     elif txt == 'Simples remessa':
         x = 9
-    elif txt == "Faturamento entre entidades publicas":
+    elif txt == "Faturamento entre entidades publicas (entre 2 estados diferentes)":
         x = 10
     return x
 
