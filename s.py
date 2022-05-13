@@ -57,7 +57,7 @@ def main():
                 else:
                     fund = 0
                     choice = 1
-                    if cnpj:
+                    if cnpj and operacao != 3:
                         choice = st.radio('Origem Produto', (1,6), index=0)
                     if estado and cnpj:
                         options = ('Nenhum dos dois', 'Fapesp', 'FFM')
