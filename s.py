@@ -28,15 +28,12 @@ def main():
             tes = 521
         elif operacao == 6:
             a = st.checkbox('Produto para Demonstração em evento')
-            if a:
-                tes = 955
-            else:
-                tes = 956
+            tes = (955 if a else 956)
         elif operacao == 2:
             tes = 527
         else:
-            ipi = st.checkbox("Produto Com IPI", value=False)
-
+            if operacao != 5:
+                ipi = st.checkbox("Produto Com IPI", value=False)
             if operacao == 4:
                 tes = op4(ipi)
             elif operacao == 10:
@@ -60,7 +57,7 @@ def main():
                 else:
                     fund = 0
                     choice = 1
-                    if cnpj:
+                    if cnpj and operacao != 3:
                         choice = st.radio('Origem Produto', (1,6), index=0)
                     if estado and cnpj:
                         options = ('Nenhum dos dois', 'Fapesp', 'FFM')
@@ -76,8 +73,9 @@ def main():
                         tes = op7(fund,choice,ipi)
 
         if st.button("Verificar"):
+            b = f'TES: {tes}'
+            st.success(b)
             if operacao == 10:
-                st.info(f'TES: {tes}')
                 st.warning("**A remessa das mercadorias, deverá conter destaque do ICMS devido, " \
                     "contendo além das informações previstas na legislação.**" \
                     "\n- Destinatário, aquele determinado pelo adquirente (Cliente);" \
@@ -85,9 +83,8 @@ def main():
                     "\n- \"Chave de Acesso da NF-e Referenciada\", a chave de acesso da NF-e relativa ao faturamento (NFE 1);" \
                     "\n- \"Informações Complementares\", a expressão \"NF-e emitida nos termos do artigo 129-A do RICMS/2000-SP\" e " \
                     "\" Ajuste Sinief 13/2013\".")
-            else:
-                b = f'TES: {tes}'
-                st.info(b)
+
+
             # final calc tes
     # st.markdown("---")
 
@@ -139,9 +136,7 @@ def fs(radio):
         return 2
     return 0
 def lado_tabela(sp, contr):
-    if sp or contr:
-        return 'a'
-    return 'b'
+    return ('a' if sp or contr else 'b')
 def numero_operacao(txt):
     if txt == 'Selecione a Operação':
         x = 0
