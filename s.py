@@ -107,8 +107,7 @@ def op1(fund,ipi,lado,choice):
             return (554 if ipi else 533)
         elif fund == 2:
             return (565 if ipi else 560)
-        elif ipi:
-            return (501 if ipi else 535)
+        return (501 if ipi else 535)
     else:
         return (948 if ipi else 947)
 def op3(fund,ipi,lado):
