@@ -14,13 +14,24 @@ def main():
     tes = 'test'
     st.header('Calculadora TES')
 
-    opcoes = ['Selecione a Operação', "Venda Normal", "Amostra", "Doação", "Entrega futura de venda",
-              "Entrega futura remessa", "Demonstração", "Saida Troca",
-              "Venda por conta e ordem", "Simples remessa","Faturamento entre entidades publicas (entre 2 estados diferentes)"]
+    opcoes = {
+        'Selecione a Operação':0,
+        "Venda Normal":1,
+        "Amostra":2,
+        "Doação":3,
+        "Entrega futura de venda":4,
+        "Entrega futura remessa":5,
+        "Demonstração":6,
+        "Saida Troca":7,
+        "Venda por conta e ordem":8,
+        "Simples remessa":9,
+        "Faturamento entre entidades publicas (entre 2 estados diferentes)":10
+    }
 
-    checkbox = st.selectbox('', opcoes)
 
-    operacao = numero_operacao(checkbox)
+    checkbox = st.selectbox('', opcoes.keys())
+
+    operacao = opcoes[checkbox]()
 
     if operacao != 0:
 
@@ -138,30 +149,7 @@ def fs(radio):
     return 0
 def lado_tabela(sp, contr):
     return ('a' if sp or contr else 'b')
-def numero_operacao(txt):
-    if txt == 'Selecione a Operação':
-        x = 0
-    elif txt == 'Venda Normal':
-        x = 1
-    elif txt == 'Amostra':
-        x = 2
-    elif txt == 'Doação':
-        x = 3
-    elif txt == 'Entrega futura de venda':
-        x = 4
-    elif txt == 'Entrega futura remessa':
-        x = 5
-    elif txt == 'Demonstração':
-        x = 6
-    elif txt == 'Saida Troca':
-        x = 7
-    elif txt == 'Venda por conta e ordem':
-        x = 8
-    elif txt == 'Simples remessa':
-        x = 9
-    elif txt == "Faturamento entre entidades publicas (entre 2 estados diferentes)":
-        x = 10
-    return x
+
 
 # final funcoes calc tes
 
