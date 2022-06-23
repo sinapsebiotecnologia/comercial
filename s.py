@@ -2,14 +2,17 @@ import streamlit as st
 
 def main():
     html_temp = """ 
-                    <body>
-                    <div style ="background-color:blue;padding:13px">
-                      <h1 style = "color:white;text-align:center;">Ferramentas Comerciais</h1>
-                    </dic>
-                    <!-- Start of sinapsebiotecnologia Zendesk Widget script -->
-                    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=c5a26d89-b719-424e-ae03-bd86a1f4feff"> </script>
-                    <!-- End of sinapsebiotecnologia Zendesk Widget script -->
-                    </body>
+                <!DOCTYPE html>
+                <html lang="en">
+                <head>
+                <meta charset="UTF-8">
+                <title>Title</title>
+                </head>
+                <body>
+                <div style ="background-color:blue;padding:13px"><h1 style = "color:white;text-align:center;">Ferramentas Comerciais</h1></dic>
+                <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=c5a26d89-b719-424e-ae03-bd86a1f4feff"> </script>
+                </body>
+                </html>
                     
                 """
 
