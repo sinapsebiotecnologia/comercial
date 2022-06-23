@@ -9,7 +9,7 @@ def main():
                 <title>Title</title>
                 </head>
                 <body>
-                <div style ="background-color:blue;padding:13px"><h1 style = "color:white;text-align:center;">Ferramentas Comerciais</h1></dic>
+                <div style ="background-color:blue;padding:13px"><h1 style = "color:white;text-align:center;">Feramentas Comerciais</h1></dic>
                 <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=c5a26d89-b719-424e-ae03-bd86a1f4feff"> </script>
                 </body>
                 </html>
