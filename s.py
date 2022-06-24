@@ -1,19 +1,16 @@
 import streamlit as st
+import streamlit.components.v1 as components  # Import Streamlit
 
 def main():
-    html_temp = """ <!DOCTYPE html>
-                    <html lang="en">
-                    <head>
-                        <meta charset="UTF-8">
-                        <title>Title</title>
-                    </head>
-                    <body>
-                    <div style ="background-color:blue;padding:13px"><h1 style = "color:white;text-align:center;">Feramentas Comerciais</h1></dic>
-                    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=c5a26d89-b719-424e-ae03-bd86a1f4feff"> </script>
-                    </body>
-                    </html>
+    html_temp = """ <div style ="background-color:blue;padding:13px">
+                      <h1 style = "color:white;text-align:center;">Feramentas Comerciais</h1>
+                    </dic>
+                    
                 """
 
+
+    # Render the h1 block, contained in a frame of size 200x200.
+    components.html("""<html><body><script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=c5a26d89-b719-424e-ae03-bd86a1f4feff"> </script></body></html>""", width=200, height=200)
     st.markdown(html_temp, unsafe_allow_html=True)
 
     # st.markdown("---")
