@@ -10,7 +10,7 @@ def main():
 
 
     # Render the h1 block, contained in a frame of size 200x200.
-    components.html("""<html><body><script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=c5a26d89-b719-424e-ae03-bd86a1f4feff"> </script></body></html>""", width=200, height=200)
+    components.html("""<html><body><script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=c5a26d89-b719-424e-ae03-bd86a1f4feff"> </script></body></html>""")
     st.markdown(html_temp, unsafe_allow_html=True)
 
     # st.markdown("---")
