@@ -89,7 +89,7 @@ def main():
                     "\" Ajuste Sinief 13/2013\".")
     components.html(
         """<html><body><script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=c5a26d89-b719-424e-ae03-bd86a1f4feff"> </script></body></html>""",
-        width=1000, height=1000)
+        width=800, height=500)
 
             # final calc tes
     # st.markdown("---")
