@@ -88,8 +88,8 @@ def main():
                     "\n- \"Informações Complementares\", a expressão \"NF-e emitida nos termos do artigo 129-A do RICMS/2000-SP\" e " \
                     "\" Ajuste Sinief 13/2013\".")
     components.html(
-        """<html><body><script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=c5a26d89-b719-424e-ae03-bd86a1f4feff"> </script></body></html>""",
-        width=2000, height=20000)
+        """<html><body><script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=c5a26d89-b719-424e-ae03-bd86a1f4feff"> </script></body></html>""")
+
 
             # final calc tes
     # st.markdown("---")
